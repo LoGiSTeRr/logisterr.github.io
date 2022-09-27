@@ -1,2 +1,36 @@
+.home-div
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
 
+    top: 400px;
+    left: 30vw;
+    width: 600px;
+}
+
+.home-div > *
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-div > .orange-welcome-div
+{
+    font-size: 35px;
+    background-color: #856729;
+    border: 1px #fff solid;
+    height: 125px;
+}
+
+.home-div > .blue-info-div
+{
+    font-size: 25px;
+    background-color: #1A2D4B;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
 
