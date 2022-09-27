@@ -1,0 +1,27 @@
+.about-div
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    top: 400px;
+    left: 30vw;
+}
+
+.about-div > .about-grid-1
+{
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+}
+.about-div > .about-grid-1 > div
+{
+}
+.about-div > .about-grid-1 > div:nth-child(1),
+.about-div > .about-grid-1 > div:nth-child(2)
+{
+    width: 150px;
+    height: 150px;
+    background-color: #1A2D4B;
+}
