@@ -5,23 +5,57 @@
     flex-direction: column;
 
     top: 400px;
-    left: 30vw;
+    left: 20vw;
 }
 
 .about-div > .about-grid-1
 {
     display: grid;
     color: white;
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(2, 500px);
 }
 .about-div > .about-grid-1 > div
 {
+
 }
 .about-div > .about-grid-1 > div:nth-child(1),
 .about-div > .about-grid-1 > div:nth-child(2)
 {
-    width: 150px;
-    height: 150px;
-    background-color: #1A2D4B;
+    width: 450px;
+    height: 350px;
+    grid-row: 1;
 }
+
+.about-div > .about-grid-1 > div:nth-child(1) > div:nth-child(1),
+.about-div > .about-grid-1 > div:nth-child(2) > div:nth-child(1)
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    font-size: 22px;
+    z-index: -1;
+    height: 100px;
+    width: 450px;
+    background-color: white;
+    color: black;
+}
+.about-div > .about-grid-1 > div:nth-child(1) > div:nth-child(2),
+.about-div > .about-grid-1 > div:nth-child(2) > div:nth-child(2)
+{
+    position: relative;
+    height: 225px;
+    width: 425px;
+    left: 12px;
+    top: 50px;
+    background-color: #1A2D4B;
+    border: 1px white solid;
+}
+
+.about-data-div
+{
+    font-size: 15px;
+    margin: 50px;
+}
+
