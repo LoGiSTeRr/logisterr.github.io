@@ -60,7 +60,7 @@ body {
 }
 
 @media screen
-and (min-device-width: 850px){
+and (max-device-width: 850px){
     .top-div
     {
         height: 400px;
