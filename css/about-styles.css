@@ -20,7 +20,6 @@
     width: 450px;
     height: 350px;
     grid-row: 1;
-
 }
 
 .about-div .about-grid-1 > .grid-data-type-1 > div:nth-child(1)
@@ -114,3 +113,27 @@
     background-color: #1A2D4B;
 }
 
+@media only screen and (max-width: 850px) {
+    .about-div
+    {
+        top: 550px;
+        left: 15vw;
+    }
+
+    .about-div .about-grid-1
+    {
+        grid-template-rows: repeat(4, 400px);
+        grid-template-columns: none;
+    }
+    .about-div .about-grid-1 > .grid-data-type-1
+    {
+        grid-row: auto;
+    }
+
+    .about-div .about-grid-2
+    {
+        justify-content: center;
+        grid-template-rows: repeat(6, 250px);
+        grid-template-columns: none;
+    }
+}

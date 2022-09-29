@@ -1,4 +1,4 @@
-.home-div {
+.history-div {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -8,12 +8,13 @@
     width: 750px;
 }
 
-.home-div > * {
+.history-div > * {
     display: flex;
     color: white;
 }
 
-.home-div > .orange-welcome-div {
+.history-div > .topic-div {
+
     font-size: 35px;
     background-color: #856729;
     border: 1px #fff solid;
@@ -24,20 +25,23 @@
     align-items: center;
 }
 
-.home-div > .blue-info-div {
+.history-div > .blue-info-div {
     font-size: 20px;
     background-color: #1A2D4B;
-    height: 300px;
+    height: 2550px;
+    flex-direction: column;
 }
 
-.home-div > .blue-info-div > div {
-    margin: 50px;
+.history-div > .blue-info-div > div {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
 }
 
-.home-div > .white-back-div {
+.history-div > .white-back-div {
     position: absolute;
     z-index: -1;
-    height: 400px;
+    height: 2650px;
     width: 800px;
     background-color: white;
     top: 35px;
@@ -45,25 +49,24 @@
 }
 
 @media only screen and (max-width: 850px) {
-    .home-div {
+    .history-div {
         top: 500px;
         left: 10vw;
     }
 
-    .home-div > .orange-welcome-div,
-    .home-div > .blue-info-div {
+    .history-div > .topic-div,
+    .history-div > .blue-info-div {
         width: 500px;
     }
-    .home-div > .blue-info-div {
-        height: 400px;
+    .history-div > .blue-info-div {
+        height: 3200px;
     }
-    .home-div > .white-back-div {
+    .history-div > .white-back-div {
         position: absolute;
         width: 550px;
         top: 60px;
         right: 225px;
         z-index: -1;
-        height: 480px;
+        height: 3290px;
     }
-
 }

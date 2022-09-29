@@ -58,3 +58,30 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+@media only screen and (max-width: 850px){
+    .top-div
+    {
+        height: 400px;
+        flex-direction: column;
+    }
+    .top-div > .top-div-text {
+        padding-left: 30vw;
+    }
+    .top-div > *
+    {
+        height: 70px;
+        width: auto;
+    }
+    .top-div > .top-div-button
+    {
+        height: 70px;
+        width: auto;
+    }
+    .top-div > .top-div-button:hover,
+    .top-div > .current-page
+    {
+        background-color: #1A2D4B;
+        height: 70px;
+    }
+}

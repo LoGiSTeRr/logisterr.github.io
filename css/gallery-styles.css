@@ -30,7 +30,7 @@
 .white-back-div
 {
     position: relative;
-    width: 600px;
+    width: 250px;
     height: 130px;
     z-index: -1;
     left: -30px;
@@ -57,4 +57,19 @@
 {
     width: 350px;
     height: 200px;
+}
+@media only screen and (max-width: 850px) {
+    .gallery-grid
+    {
+        top: 600px;
+        left: 10vw;
+
+        justify-content: center;
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 250px);
+    }
+    .num-gallery
+    {
+        width: 500px;
+    }
 }
