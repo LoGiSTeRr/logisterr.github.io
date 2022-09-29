@@ -1,8 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
     background: url("../img/bangkok-city.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
     font-family: sans-serif;
@@ -13,6 +17,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100px;
     background-color: #374A6B;
@@ -20,25 +26,43 @@ body {
 }
 
 .top-div > .top-div-text {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-left: 15vw;
     margin-right: 10vw;
     font-size: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
     width: 200px;
 }
 
 .top-div > .top-div-button {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
     width: 150px;
 
+    -webkit-transition: 0.2s;
+
+    -o-transition: 0.2s;
+
     transition: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
     transition-timing-function: linear;
 }
 
@@ -63,6 +87,9 @@ body {
     .top-div
     {
         height: 400px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .top-div > .top-div-text {

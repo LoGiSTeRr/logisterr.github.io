@@ -1,6 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .contact-div {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     top: 400px;
@@ -8,6 +20,8 @@
 }
 
 .contact-div > div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     background-color: white;
@@ -16,7 +30,11 @@
 }
 
 .contact-div > div:nth-child(1) > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 35px;
 
@@ -24,7 +42,12 @@
 }
 
 .contact-info-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin-top: 40px;
 
@@ -44,7 +67,12 @@
 }
 
 .form-div > .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -71,7 +99,13 @@
     color: white;
     cursor: pointer;
 
+    -webkit-transition: 0.2s;
+
+    -o-transition: 0.2s;
+
     transition: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
     transition-timing-function: linear;
 }
 .form-div > .contact-form > input[id=send-button]:hover
@@ -86,15 +120,20 @@
     }
 
     .contact-div > div:nth-child(1) {
-         display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-         background-color: white;
-         width: 500px;
-         height: 100px;
+        background-color: white;
+        width: 500px;
+        height: 100px;
     }
 
     .contact-info-div
     {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         width: 500px;
         height: 600px;
