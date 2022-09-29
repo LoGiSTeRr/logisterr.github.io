@@ -1,0 +1,71 @@
+.home-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  top: 400px;
+  left: 30vw;
+  width: 750px;
+
+  > * {
+    display: flex;
+    color: white;
+  }
+
+  > .orange-welcome-div {
+    font-size: 35px;
+    background-color: #856729;
+    border: 1px #fff solid;
+    height: 125px;
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .blue-info-div {
+    font-size: 20px;
+    background-color: #1A2D4B;
+    height: 300px;
+  }
+
+  > .blue-info-div > div {
+    margin: 50px;
+  }
+
+  > .white-back-div {
+    position: absolute;
+    z-index: -1;
+    height: 400px;
+    width: 800px;
+    background-color: white;
+    top: 35px;
+    right: -25px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home-div {
+    top: 500px;
+    left: 10vw;
+
+    > .orange-welcome-div,
+    > .blue-info-div {
+      width: 500px;
+    }
+
+    > .blue-info-div {
+      height: 400px;
+    }
+
+    > .white-back-div {
+      position: absolute;
+      width: 550px;
+      top: 60px;
+      right: 225px;
+      z-index: -1;
+      height: 480px;
+    }
+  }
+
+}

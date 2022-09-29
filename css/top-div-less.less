@@ -1,0 +1,92 @@
+@background-darkblue-color: #1A2D4B;
+
+body {
+  background: url("../img/bangkok-city.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  font-family: sans-serif;
+}
+
+.top-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 100px;
+  background-color: #374A6B;
+  opacity: 90%;
+  > .top-div-text {
+    justify-content: center;
+    align-items: center;
+    padding-left: 15vw;
+    margin-right: 10vw;
+    font-size: 30px;
+    display: flex;
+    color: white;
+    width: 200px;
+  }
+
+  > .top-div-button {
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    display: flex;
+    color: white;
+    width: 150px;
+
+    transition: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  > .top-div-button:hover {
+    background-color: @background-darkblue-color;
+    height: 120px;
+  }
+
+  > .current-page
+  {
+    background-color: @background-darkblue-color;
+    height: 120px;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .top-div
+  {
+    height: 400px;
+    flex-direction: column;
+
+    > .top-div-text {
+      padding-left: 30vw;
+    }
+
+    > *
+    {
+      height: 70px;
+      width: auto;
+    }
+
+    > .top-div-button
+    {
+      height: 70px;
+      width: auto;
+    }
+
+    > .top-div-button:hover,
+    > .current-page
+    {
+      background-color: @background-darkblue-color;
+      height: 70px;
+    }
+  }
+}
