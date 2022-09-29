@@ -83,7 +83,7 @@ body {
     color: inherit;
 }
 
-@media only screen and (max-width: 850px){
+@media (max-width: 850px){
     .top-div
     {
         height: 400px;
